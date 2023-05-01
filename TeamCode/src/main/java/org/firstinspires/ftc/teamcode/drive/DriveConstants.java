@@ -33,9 +33,8 @@ public class DriveConstants {
      * from DriveVelocityPIDTuner.
      */
     public static final boolean RUN_USING_ENCODER = true;
-    public static PIDFCoefficients MOTOR_VELO_PID = new PIDFCoefficients(0, 0, 0,
+    public static PIDFCoefficients MOTOR_VELO_PID = new PIDFCoefficients(16, 0, 0,
             getMotorVelocityF(MAX_RPM / 60 * TICKS_PER_REV));
-
     /*
      * These are physical constants that can be determined from your robot (including the track
      * width; it will be tune empirically later although a rough estimate is important). Users are
@@ -67,11 +66,8 @@ public class DriveConstants {
      */
     public static double MAX_VEL = 30;
     public static double MAX_ACCEL = 30;
-    public static double MAX_ANG_VEL = Math.toRadians(247.7142857142857);
-    public static double MAX_ANG_ACCEL = Math.toRadians(247.7142857142857);
-
-//    public static double MAX_ANG_VEL = 2.43;
-//    public static double MAX_ANG_ACCEL = Math.toRadians(60);
+    public static double MAX_ANG_VEL = 2.3910430908203124;
+    public static double MAX_ANG_ACCEL = 4.323180557189954;
 
     /*
      * Adjust the orientations here to match your robot. See the FTC SDK documentation for details.
